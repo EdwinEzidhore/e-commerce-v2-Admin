@@ -3,7 +3,7 @@ import { throwError } from "@/helper/errorHandler";
 import cloudinary from "@/lib/cloudinary";
 import connect from "@/lib/db";
 import { isAuthenticated } from "@/lib/middleware";
-import Banner from "@/lib/modals/Banner";
+import Banner from "@/lib/modals/Banner.js";
 import { redirect } from "next/navigation";
 
 

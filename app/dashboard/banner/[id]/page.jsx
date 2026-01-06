@@ -3,7 +3,7 @@ import { CardContent, } from "@/components/ui/card";
 import BannerEditForm from "./BannerEditForm";
 import { isAuthenticated } from "@/lib/middleware";
 import { redirect } from "next/navigation";
-import Banner from "@/lib/modals/Banner";
+import Banner from "@/lib/modals/Banner.js";
 import connect from "@/lib/db";
 import { throwError } from "@/helper/errorHandler";
 

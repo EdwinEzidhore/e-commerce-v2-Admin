@@ -1,6 +1,6 @@
 import { hash_password } from "@/helper/password_hash";
 import connect from "@/lib/db";
-import Admin from "@/lib/modals/Admin";
+import Admin from "@/lib/modals/Admin.js";
 import { NextResponse } from "next/server";
 
 export async function POST(req) {

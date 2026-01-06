@@ -1,5 +1,5 @@
 import CategoryEdit from "@/app/components/category/CategoryEdit";
-import Category from "@/lib/modals/Category";
+import Category from "@/lib/modals/Category.js";
 
 async function FetchCategory(id) {
     try {

@@ -1,6 +1,6 @@
 import NextAuth from "next-auth";
 import CredentialsProvider from "next-auth/providers/credentials";
-import Admin from "@/lib/modals/Admin";
+import Admin from "@/lib/modals/Admin.js";
 import connect from "@/lib/db";
 import bcrypt from "bcrypt"
 import { throwError } from "@/helper/errorHandler";

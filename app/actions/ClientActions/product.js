@@ -2,7 +2,7 @@
 
 import { throwError } from "@/helper/errorHandler";
 import connect from "@/lib/db";
-import Product from "@/lib/modals/Product";
+import Product from "@/lib/modals/Product.js";
 
 export async function Featured(params) {
     try {

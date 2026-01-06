@@ -3,7 +3,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { PlusCircleIcon, } from "lucide-react";
 import Link from "next/link";
 import { Banner_list_Column } from "./BannerColumn";
-import Banner from "@/lib/modals/Banner";
+import Banner from "@/lib/modals/Banner.js";
 import { DataTable } from "@/app/components/DataTable";
 import connect from "@/lib/db";
 import { Separator } from "@/components/ui/separator";
