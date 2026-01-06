@@ -2,8 +2,8 @@
 
 import connect from "@/lib/db";
 import { isAuthenticated } from "@/lib/middleware";
-import Category from "@/lib/modals/Category";
-import Product from "@/lib/modals/products";
+import Category from "@/lib/modals/Category.js";
+import Product from "@/lib/modals/Product.js";
 import { Db } from "mongodb";
 import { redirect } from "next/navigation";
 import { NextResponse } from "next/server";

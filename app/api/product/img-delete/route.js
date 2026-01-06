@@ -1,7 +1,7 @@
 import cloudinary from "@/lib/cloudinary";
 import connect from "@/lib/db";
 import { isAuthenticated } from "@/lib/middleware";
-import Product from "@/lib/modals/products";
+import Product from "@/lib/modals/Products";
 import { NextResponse } from "next/server";
 
 export async function DELETE(req) {

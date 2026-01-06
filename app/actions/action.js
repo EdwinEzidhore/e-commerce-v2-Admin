@@ -1,7 +1,7 @@
 "use server";
 import connect from "@/lib/db";
 import { isAuthenticated } from "@/lib/middleware";
-import Product from "@/lib/modals/products";
+import Product from "@/lib/modals/Product.js";
 import { redirect } from "next/navigation";
 
 
@@ -28,3 +28,6 @@ export async function FetchProducts() {
         };
     }
 }
+
+
+

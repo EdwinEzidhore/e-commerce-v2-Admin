@@ -137,26 +137,26 @@ const Newproduct = ({ categories }) => {
         });
 
 
-        // axios.post('/api/product', formData, config)
-        //     .then((res) => {
-        //         if (res.status === 200) {
-        //             setprevURL([]);
-        //             setLoading(false);
+        axios.post('/api/product', formData, config)
+            .then((res) => {
+                if (res.status === 200) {
+                    setprevURL([]);
+                    setLoading(false);
 
-        //             router.push('/dashboard/products')
-        //             toast({
-        //                 description: `${res.data.message}`
-        //             })
-        //         }
+                    router.push('/dashboard/products')
+                    toast({
+                        description: `${res.data.message}`
+                    })
+                }
 
-        //     }).catch((err) => {
-        //         setLoading(false);
-        //         console.log(err);
-        //         toast({
-        //             description: `${err?.response?.data?.message ?? "An unexpected error occured!"}`,
-        //         })
+            }).catch((err) => {
+                setLoading(false);
+                console.log(err);
+                toast({
+                    description: `${err?.response?.data?.message ?? "An unexpected error occured!"}`,
+                })
 
-        //     })
+            })
 
     }
 
@@ -291,7 +291,8 @@ const Newproduct = ({ categories }) => {
                                                             </span>
                                                         </label>
                                                     </div>
-                                                ))}
+                                                ))
+                                            }
                                         </div>
                                     </FormControl>
                                     <FormMessage />

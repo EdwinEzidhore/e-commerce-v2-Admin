@@ -18,10 +18,12 @@ export const authOptions = {
       },
       async authorize(credentials) {
         
-        await connect();
-        console.log("checking user!");
+
         
         try {
+
+          await connect();
+          console.log("checking user!");
           const user = await Admin.findOne({ email: credentials.email });
           if (!user) {
             throwError("user not found!")

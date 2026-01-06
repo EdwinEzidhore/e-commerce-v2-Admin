@@ -1,9 +1,10 @@
 import { NextResponse } from 'next/server';
-import Product from '@/lib/modals/products';
+import Product from '@/lib/modals/Product.js';
 import connect from '@/lib/db';
 import cloudinary from '@/lib/cloudinary';
 import { isAuthenticated } from '@/lib/middleware';
-import Category from '@/lib/modals/Category';
+import Category from '@/lib/modals/Category.js';
+
 
 
 export async function POST(request) {

@@ -1,7 +1,7 @@
 import { FetchCategory } from "@/app/actions/CategoryActions";
 import { EditForm } from "@/app/components/dashboard/EditForm";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import Product from "@/lib/modals/products";
+import Product from "@/lib/modals/Product.js";
 import mongoose from "mongoose";
 import { notFound } from "next/navigation";
 
